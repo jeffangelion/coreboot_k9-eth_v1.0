@@ -1,0 +1,4 @@
+## SPDX-License-Identifier: GPL-2.0-only
+
+config BOARD_RANDOTECH_K9ETHV10
+	bool "K9-ETH V1.0"
