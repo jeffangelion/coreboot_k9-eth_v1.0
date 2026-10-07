@@ -31,7 +31,7 @@ config DRAM_RESET_GATE_GPIO # FIXME: check this
 	int
 	default 60
 
-config USBDEBUG_HCD_INDEX # FIXME: check this
+config USBDEBUG_HCD_INDEX
 	int
-	default 2
+	default 1
 endif
