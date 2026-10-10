@@ -78,7 +78,7 @@ is
       if success then
          ports := Mainboard.ports;
          HW.GFX.GMA.Display_Probing.Scan_Ports (configs, ports);
-      
+
          if configs (Primary).Port = Disabled then
             configs (Primary).Port := Analog;
             configs (Primary).Mode := HW.GFX.M1024x768_60;

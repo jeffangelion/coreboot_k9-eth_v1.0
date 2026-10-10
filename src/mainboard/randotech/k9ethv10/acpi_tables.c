@@ -3,7 +3,6 @@
 #include <acpi/acpi_gnvs.h>
 #include <soc/nvs.h>
 
-/* FIXME: check this function.  */
 void mainboard_fill_gnvs(struct global_nvs *gnvs)
 {
 	/* The lid is open by default. */

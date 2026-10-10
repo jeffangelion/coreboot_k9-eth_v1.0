@@ -8,7 +8,6 @@ use HW.GFX.GMA.Display_Probing;
 
 private package GMA.Mainboard is
 
-   -- FIXME: check this
    ports : constant Port_List :=
      (Analog,
       others => Disabled);

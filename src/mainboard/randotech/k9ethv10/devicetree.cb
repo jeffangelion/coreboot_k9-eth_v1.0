@@ -1,4 +1,4 @@
-chip northbridge/intel/sandybridge # FIXME: GPU registers may not always apply.
+chip northbridge/intel/sandybridge
 	register "gfx" = "GMA_STATIC_DISPLAYS(0)"
 	register "gpu_cpu_backlight" = "0x00000000"
 	register "gpu_dp_b_hotplug" = "0"
