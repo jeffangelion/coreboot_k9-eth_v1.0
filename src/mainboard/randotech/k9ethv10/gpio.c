@@ -58,7 +58,7 @@ static const struct pch_gpio_set1 pch_gpio_set1_direction = {
 
 static const struct pch_gpio_set1 pch_gpio_set1_level = {
 	.gpio8 = GPIO_LEVEL_HIGH,
-	.gpio12 = GPIO_LEVEL_LOW,
+	.gpio12 = GPIO_LEVEL_HIGH,
 	.gpio15 = GPIO_LEVEL_LOW,
 	.gpio24 = GPIO_LEVEL_LOW,
 	.gpio28 = GPIO_LEVEL_LOW,
