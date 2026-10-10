@@ -31,8 +31,7 @@ mainboard-specific code accordingly.
 
 ### Working
 
-Tests were done with EDK2 and slackware64-live from 2019-07-12
-(linux-4.19.50).
+Tests were done with EDK2 and Debian 13.7 (linux-6.12.107).
 
 + Intel Xeon E3-1245v2
 + Only SO-DIMM slots at 1600 MHz (tested 1x8GB)
