@@ -3,6 +3,8 @@
 The R&O Industrial Technology Co., Limited K9-ETH v1.0 is a PCIe addon card-formated
  desktop board. It was used as GPU mining rig and (later on) NAS management board.
 
+ ![](k9ethv10.jpg)
+
 ## Technology
 
 ```{eval-rst}
@@ -29,7 +31,7 @@ mainboard-specific code accordingly.
 
 ### Working
 
-Tests were done with SeaBIOS 1.14.0 and slackware64-live from 2019-07-12
+Tests were done with EDK2 and slackware64-live from 2019-07-12
 (linux-4.19.50).
 
 + Intel Xeon E3-1245v2
