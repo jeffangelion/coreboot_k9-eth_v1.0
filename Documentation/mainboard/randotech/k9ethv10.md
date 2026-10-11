@@ -35,10 +35,12 @@ Tests were done with EDK2 and Debian 13.7 (linux-6.12.107).
 
 + Intel Xeon E3-1245v2
 + Only SO-DIMM slots at 1600 MHz (tested 1x8GB)
++ Super I/O
 + Integrated graphics (libgfxinit)
 + VGA port
 + USB (2 internal, 2 external)
 + mSATA slot
++ SATA port
 + Onboard Ethernet
 + Poweroff
 
@@ -47,11 +49,15 @@ Tests were done with EDK2 and Debian 13.7 (linux-6.12.107).
 
 ### Untested
 
-+ PCI-e 'slot'
++ PCI-e 'slot' (there should be 1 x4 and 4 x1, requires additional backplane)
 + S3 suspend/resume
-+ Super I/O
 + Wake-on-LAN
-+ SATA port
+
+## Notes
+
+SATA port priority:
++ SATA1
++ M-SATA1
 
 ## Flashing coreboot
 
