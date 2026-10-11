@@ -24,7 +24,7 @@ chip northbridge/intel/sandybridge
 		end
 		chip southbridge/intel/bd82x6x # Intel 6 Series Cougar Point PCH
 			register "docking_supported" = "0"
-			register "gen1_dec" = "0x00000000"
+			register "gen1_dec" = "0x00040291"
 			register "gen2_dec" = "0x00000000"
 			register "gen3_dec" = "0x00000000"
 			register "gen4_dec" = "0x00000000"
@@ -89,6 +89,39 @@ chip northbridge/intel/sandybridge
 			end
 			device ref lpc on
 				subsystemid 0x8086 0x1c4a
+				chip superio/nuvoton/nct6779d
+					device pnp 2e.1 off end   # Parallel Port
+				device pnp 2e.2 on        # COM1
+					io 0x60 = 0x3f8
+					irq 0x70 = 4
+				end
+				device pnp 2e.3 off end   # COM2
+				device pnp 2e.5 off end   # KBC
+				device pnp 2e.6 off end   # CIR
+				device pnp 2e.7 off end   # GPIO678
+				device pnp 2e.8 off end   # WDT1
+				device pnp 2e.a off end   # ACPI
+				device pnp 2e.b on        # Hardware Monitor
+					io 0x60 = 0x290
+					io 0x62 = 0x290
+					irq 0x70 = 0
+				end
+				device pnp 2e.d off end   # WDT
+				device pnp 2e.e off end   # CIR Wakeup
+				device pnp 2e.f off end   # GPIO PP/OD
+				device pnp 2e.14 off end  # Port80 UART
+				device pnp 2e.16 off end  # Deep Sleep
+				device pnp 2e.308 off end # GPIOBASE
+				device pnp 2e.108 off end # GPIO0
+				device pnp 2e.109 off end # GPIO1
+				device pnp 2e.209 off end # GPIO2
+				device pnp 2e.309 off end # GPIO3
+				device pnp 2e.409 off end # GPIO4
+				device pnp 2e.509 off end # GPIO5
+				device pnp 2e.609 off end # GPIO6
+				device pnp 2e.709 off end # GPIO7
+				device pnp 2e.9 off end   # GPIO8
+				end
 			end
 			device ref sata1 on
 				subsystemid 0x8086 0x1c02
