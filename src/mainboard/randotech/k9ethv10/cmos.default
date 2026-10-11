@@ -5,5 +5,5 @@ debug_level=Debug
 nmi=Disable
 power_on_after_fail=Disable
 sata_mode=AHCI
-gfx_uma_size=64M
+gfx_uma_size=32M
 hyper_threading=Enable
