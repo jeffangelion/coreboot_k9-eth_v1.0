@@ -1,6 +1,6 @@
-# R&O Industrial Technology Co., Limited K9-ETH v1.0
+# R&OTECH K9-ETH v1.0
 
-The R&O Industrial Technology Co., Limited K9-ETH v1.0 is a PCIe addon card-formated
+The R&OTECH (R&O Industrial Technology Co., Limited) K9-ETH v1.0 is a PCIe addon card-formated
  desktop board. It was used as GPU mining rig and (later on) NAS management board.
 
  ![](k9ethv10.jpg)
