@@ -43,15 +43,15 @@ Tests were done with EDK2 and Debian 13.7 (linux-6.12.107).
 + SATA port
 + Onboard Ethernet
 + Poweroff
++ Wake-on-LAN
 
 ### Not working
 
++ S3 suspend/resume (constant SUS_PWR_FLR)
 
 ### Untested
 
 + PCI-e 'slot' (there should be 1 x4 and 4 x1, requires additional backplane)
-+ S3 suspend/resume
-+ Wake-on-LAN
 
 ## Notes
 
