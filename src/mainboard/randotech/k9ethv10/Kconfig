@@ -38,4 +38,9 @@ config DRAM_RESET_GATE_GPIO
 config USBDEBUG_HCD_INDEX
 	int
 	default 1
+
+config USBDEBUG_OPTIONAL_HUB_PORT
+	int
+	default 1
+
 endif

@@ -24,7 +24,7 @@ chip northbridge/intel/sandybridge
 		end
 		chip southbridge/intel/bd82x6x # Intel 6 Series Cougar Point PCH
 			register "docking_supported" = "0"
-			register "gen1_dec" = "0x00040291"
+			register "gen1_dec" = "LPC_IO(0x290, 0x8)"
 			register "gen2_dec" = "0x00000000"
 			register "gen3_dec" = "0x00000000"
 			register "gen4_dec" = "0x00000000"

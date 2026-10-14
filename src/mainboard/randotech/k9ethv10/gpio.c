@@ -65,15 +65,13 @@ static const struct pch_gpio_set1 pch_gpio_set1_level = {
 	.gpio29 = GPIO_LEVEL_HIGH,
 };
 
-static const struct pch_gpio_set1 pch_gpio_set1_reset = {
-};
+static const struct pch_gpio_set1 pch_gpio_set1_reset = {};
 
 static const struct pch_gpio_set1 pch_gpio_set1_invert = {
 	.gpio13 = GPIO_INVERT,
 };
 
-static const struct pch_gpio_set1 pch_gpio_set1_blink = {
-};
+static const struct pch_gpio_set1 pch_gpio_set1_blink = {};
 
 static const struct pch_gpio_set2 pch_gpio_set2_mode = {
 	.gpio32 = GPIO_MODE_GPIO,
@@ -123,8 +121,7 @@ static const struct pch_gpio_set2 pch_gpio_set2_level = {
 	.gpio33 = GPIO_LEVEL_HIGH,
 };
 
-static const struct pch_gpio_set2 pch_gpio_set2_reset = {
-};
+static const struct pch_gpio_set2 pch_gpio_set2_reset = {};
 
 static const struct pch_gpio_set3 pch_gpio_set3_mode = {
 	.gpio64 = GPIO_MODE_NATIVE,
@@ -147,31 +144,29 @@ static const struct pch_gpio_set3 pch_gpio_set3_direction = {
 	.gpio72 = GPIO_DIR_INPUT,
 };
 
-static const struct pch_gpio_set3 pch_gpio_set3_level = {
-};
+static const struct pch_gpio_set3 pch_gpio_set3_level = {};
 
-static const struct pch_gpio_set3 pch_gpio_set3_reset = {
-};
+static const struct pch_gpio_set3 pch_gpio_set3_reset = {};
 
 const struct pch_gpio_map mainboard_gpio_map = {
-	.set1 = {
-		.mode		= &pch_gpio_set1_mode,
-		.direction	= &pch_gpio_set1_direction,
-		.level		= &pch_gpio_set1_level,
-		.blink		= &pch_gpio_set1_blink,
-		.invert		= &pch_gpio_set1_invert,
-		.reset		= &pch_gpio_set1_reset,
-	},
+	.set1 =	{
+		.mode = &pch_gpio_set1_mode,
+		.direction = &pch_gpio_set1_direction,
+		.level = &pch_gpio_set1_level,
+		.blink = &pch_gpio_set1_blink,
+		.invert = &pch_gpio_set1_invert,
+		.reset = &pch_gpio_set1_reset,
+		},
 	.set2 = {
-		.mode		= &pch_gpio_set2_mode,
-		.direction	= &pch_gpio_set2_direction,
-		.level		= &pch_gpio_set2_level,
-		.reset		= &pch_gpio_set2_reset,
-	},
+		.mode = &pch_gpio_set2_mode,
+		.direction = &pch_gpio_set2_direction,
+		.level = &pch_gpio_set2_level,
+		.reset = &pch_gpio_set2_reset,
+		},
 	.set3 = {
-		.mode		= &pch_gpio_set3_mode,
-		.direction	= &pch_gpio_set3_direction,
-		.level		= &pch_gpio_set3_level,
-		.reset		= &pch_gpio_set3_reset,
-	},
+		.mode = &pch_gpio_set3_mode,
+		.direction = &pch_gpio_set3_direction,
+		.level = &pch_gpio_set3_level,
+		.reset = &pch_gpio_set3_reset,
+		},
 };
