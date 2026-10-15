@@ -134,6 +134,7 @@ D41S <foxconn/d41s.md>
 :maxdepth: 1
 
 Laptop 12 13th Gen Intel (Sunflower) <framework/sunflower.md>
+Laptop 12 Intel Core Series 3 (Dahlia) <framework/dahlia.md>
 Laptop 13 Intel Core Ultra Series 1 (Marigold) <framework/marigold.md>
 Laptop 13 Intel Core Ultra Series 3 (Sakura) <framework/sakura.md>
 Laptop 13 Ryzen 7040 Series (Azalea) <framework/azalea/azalea.md>
@@ -288,6 +289,7 @@ LT1000 <libretrend/lt1000.md>
 :maxdepth: 1
 
 MS-7707 <msi/ms7707/ms7707.md>
+MS-7D98 <msi/ms7d98/ms7d98.md>
 ```
 
 ## OCP
@@ -350,6 +352,13 @@ FW2B / FW4B <protectli/fw2b_fw4b.md>
 FW6A / FW6B / FW6C <protectli/fw6.md>
 VP2420 <protectli/vp2420.md>
 VP4630 / VP4650 / VP4670 <protectli/vp46xx.md>
+```
+
+## R&OTECH
+```{toctree}
+:maxdepth 1
+
+K9-ETH v1.0 <randotech/k9ethv10.md>
 ```
 
 ## Roda

@@ -1,7 +1,5 @@
 ## SPDX-License-Identifier: GPL-2.0-only
 
-# This device has been 'autoport'-ed, proceed with caution
-
 if VENDOR_RANDOTECH
 
 choice

@@ -6,6 +6,5 @@
 
 void bootblock_mainboard_early_init(void)
 {
-	pci_write_config16(PCI_DEV(0, 0x1f, 0), 0x82, 0x0400);
-	pci_write_config16(PCI_DEV(0, 0x1f, 0), 0x80, 0x0000);
+	pci_write_config16(PCH_LPC_DEV, LPC_EN, KBC_LPC_EN);
 }
